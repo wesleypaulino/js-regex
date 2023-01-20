@@ -8,8 +8,8 @@
 {n,} - no mínimo n vezes.
 {n,m} - no mínimo n vezes, no máximo m vezes.
 
-#Classes de letras
-##Para descrever o mês, devemos usar uma nova classe de letras, seguem alguns exemplos:
+# Classes de letras
+## Para descrever o mês, devemos usar uma nova classe de letras, seguem alguns exemplos:
 
 [A-Z] significa de A até Z, sempre maiúscula.
 [a-z] significa de a até z, sempre minúscula,
@@ -17,7 +17,7 @@
 [abc] significa a, b ou c.
 
 
-#Trabalhando com espaços
+# Trabalhando com espaços
 A definição do \s pode variar um pouco entre as implementações, mas normalmente é um atalho para [ \t\r\n\f] onde:
 
 O primeiro caractere é um espaço branco.
@@ -39,3 +39,9 @@ Existem várias âncoras predefinidas, mas as mais comuns são ^, $ e \b. Lembra
 
 Não pode conter word char
 \w - word Char [A-Za-z0-9_]
+
+# Grupos
+
+(\w+)   -  grupo de word chars
+(\w+)?  -  grupo opcional
+(?:\w+) -  non-capturing group
